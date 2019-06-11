@@ -18,5 +18,6 @@ puts "----------"
 @store2.employees.create(first_name: "Dweub", last_name: "Darwb", hourly_rate: 43)
 @store2.employees.create(first_name: "Kreir", last_name: "Liwer", hourly_rate: 54)
 @store2.employees.create(first_name: "Mtrgher", last_name: "Baer", hourly_rate: 78)
-
-#puts Employee.count
+#tring to add an employee without a  Store, has to fail
+Employee.create(first_name: "Mtrgher", last_name: "Baer", hourly_rate: 78)
+puts Employee.count

@@ -10,3 +10,6 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts "please provide a store name"
+store_name = gets.chomp
+puts Store.create(:name => store_name)
