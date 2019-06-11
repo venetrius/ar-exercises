@@ -10,6 +10,8 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts "number of stores #{Store.count}"
 puts "please provide a store name"
 store_name = gets.chomp
-puts Store.create(:name => store_name)
+failed_attempt = Store.create(:name => store_name)
+puts failed_attempt
